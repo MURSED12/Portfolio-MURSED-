@@ -8,8 +8,6 @@
   <!-- Fonts & Icons -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-  <!-- AOS (scroll animation) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
   <!-- CSS -->
@@ -19,12 +17,13 @@
 <body>
   <canvas id="bgCanvas"></canvas>
 
-  <!-- Navbar -->
-  <header class="navbar">
+  <!-- 🌟 NAVBAR -->
+  <header class="navbar" id="navbar">
     <div class="logo">🪄 Sara</div>
-    <nav>
+    <div class="menu-toggle" id="menu-toggle"><i class="fas fa-bars"></i></div>
+    <nav class="nav-menu" id="nav-menu">
       <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
+        <li><a href="#home" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -34,19 +33,17 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- 🪩 HERO -->
   <section id="home" class="hero">
     <div class="hero-content" data-aos="fade-right">
       <p class="tag">✨ WELCOME TO MY WORLD ✨</p>
       <h1>Hi, <span id="typing"></span></h1>
       <h2><span>UI & UX</span> Designer</h2>
       <p class="desc">I create intuitive and visually appealing digital experiences that meet users’ expectations.</p>
-
       <div class="hero-buttons">
         <a href="#projects" class="btn primary">My Projects</a>
         <a href="#" class="btn secondary">Download CV</a>
       </div>
-
       <div class="socials">
         <a href="#"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -54,104 +51,84 @@
         <a href="#"><i class="fab fa-facebook"></i></a>
       </div>
     </div>
-
     <div class="hero-avatar" data-aos="fade-left">
       <img src="images/avatar.png" alt="Sara Avatar">
     </div>
   </section>
 
-  <!-- About -->
-  <section id="about" class="about-section">
+  <!-- 💜 ABOUT -->
+  <section id="about" class="section-glass">
     <div class="about-container" data-aos="fade-up">
-      <!-- Avatar -->
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I'm <strong>Sara Howari</strong>, a passionate UI/UX designer focused on crafting seamless and engaging digital experiences.</p>
+        <p>With expertise in <strong>wireframing, prototyping, and user research</strong>, I bring creativity and structure together to create designs that stand out.</p>
+        <div class="skills">
+          <span class="skill-icon figma"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="skill-icon ps"><i class="fa-solid fa-palette"></i> Photoshop</span>
+          <span class="skill-icon xd"><i class="fa-solid fa-x"></i> XD</span>
+          <span class="skill-icon ai"><i class="fa-solid fa-bezier-curve"></i> Illustrator</span>
+        </div>
+      </div>
       <div class="about-avatar">
         <div class="avatar-bg">
           <img src="images/avatar.png" alt="Sara Avatar">
         </div>
-        <div class="floating-shapes">
-          <span class="shape"></span>
-          <span class="shape"></span>
-          <span class="shape"></span>
-        </div>
       </div>
-
-      <!-- Content -->
-      <div class="about-content glass">
-        <h2>About Me</h2>
-        <p>
-          Welcome to my portfolio! I'm <strong>Sara Howari</strong>, a passionate UI/UX designer
-          dedicated to creating seamless and visually engaging digital experiences.
-          With over 2 years of experience, I specialize in designing intuitive interfaces
-          that enhance usability and user satisfaction.
-        </p>
-        <p>
-          My skills include <strong>wireframing, prototyping, and user research</strong>,
-          ensuring that each design is both aesthetically pleasing and functionally efficient.
-          I’ve worked on diverse projects including mobile apps, dashboards, and web platforms.
-        </p>
-        <p>
-          I’m deeply committed to blending creativity with precision to deliver
-          user-centered designs that stand out.
-        </p>
-
-        <h3>Skills</h3>
-        <div class="skills">
-          <span class="skill-icon figma"><i class="fa-brands fa-figma"></i> Figma</span>
-          <span class="skill-icon xd"><i class="fa-solid fa-x"></i> XD</span>
-          <span class="skill-icon ps"><i class="fa-solid fa-palette"></i> Photoshop</span>
-          <span class="skill-icon ai"><i class="fa-solid fa-bezier-curve"></i> Illustrator</span>
-        </div>
-      </div>
-    </div>
-
-    <!-- Scroll Down Arrow -->
-    <div class="scroll-down">
-      <a href="#services"><i class="fa-solid fa-chevron-down"></i></a>
     </div>
   </section>
 
-  <!-- Services -->
-  <section id="services" class="services" data-aos="fade-up">
+  <!-- 🛠️ SERVICES -->
+  <section id="services" class="section-glass" data-aos="fade-up">
     <h2>Services</h2>
     <div class="service-cards">
-      <div class="card glow"><i class="fas fa-paint-brush"></i><h3>UI/UX Design</h3><p>Crafting intuitive designs that enhance user experience.</p></div>
-      <div class="card glow"><i class="fas fa-code"></i><h3>Web Design</h3><p>Designing responsive and engaging websites tailored to users.</p></div>
-      <div class="card glow"><i class="fas fa-mobile-alt"></i><h3>App Design</h3><p>Creating seamless and user-friendly mobile app interfaces.</p></div>
-      <div class="card glow"><i class="fas fa-vector-square"></i><h3>Prototyping</h3><p>Building structured wireframes for better design flow.</p></div>
+      <div class="card"><i class="fas fa-paint-brush"></i><h3>UI/UX Design</h3><p>Enhancing user experiences with clean design.</p></div>
+      <div class="card"><i class="fas fa-code"></i><h3>Web Design</h3><p>Responsive and aesthetic websites.</p></div>
+      <div class="card"><i class="fas fa-mobile-alt"></i><h3>App Design</h3><p>User-friendly mobile interfaces.</p></div>
+      <div class="card"><i class="fas fa-vector-square"></i><h3>Prototyping</h3><p>Wireframes that shape ideas into flow.</p></div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="projects" data-aos="fade-up">
+  <!-- 📱 PROJECTS -->
+  <section id="projects" class="section-glass" data-aos="fade-up">
     <h2>My Projects</h2>
     <div class="project-list">
-      <div class="project-card glass"><h3>Amaksora App</h3><p>Visually appealing mobile app UI/UX design.</p></div>
-      <div class="project-card highlight glass"><h3>Homy App</h3><p>Seamless and intuitive app interface.</p></div>
-      <div class="project-card glass"><h3>B-Roll Media</h3><p>Modern web interface with user-focused flow.</p></div>
+      <div class="project-card"><h3>Amaksora App</h3><p>Modern mobile app UI/UX design.</p></div>
+      <div class="project-card"><h3>Homy App</h3><p>Intuitive interface with simple flow.</p></div>
+      <div class="project-card"><h3>B-Roll Media</h3><p>Web app designed with users in mind.</p></div>
     </div>
   </section>
 
-  <!-- Testimonials -->
-  <section id="testimonials" class="testimonials" data-aos="fade-up">
+  <!-- 💬 TESTIMONIALS -->
+  <section id="testimonials" class="section-glass" data-aos="fade-up">
     <h2>Testimonials</h2>
-    <div class="testimonial-card glass">
-      <p>“Sara did an amazing job designing a user-friendly and intuitive experience for our project. Her attention to detail and creativity made a huge difference!”</p>
+    <div class="testimonial-card">
+      <p>“Sara’s design was elegant, intuitive, and efficient. Highly recommended!”</p>
       <h4>— Huda Samer, CEO</h4>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact" data-aos="fade-up">
+  <!-- 💌 CONTACT -->
+  <section id="contact" class="section-glass" data-aos="fade-up">
     <h2>Let's Create Something Amazing Together ✨</h2>
-    <form>
-      <input type="text" placeholder="Your Name" required>
-      <input type="email" placeholder="Your Email" required>
+    <form id="contactForm">
+      <div class="form-row">
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+      </div>
       <textarea placeholder="Write your message..." required></textarea>
       <button type="submit" class="btn primary">Send Message</button>
     </form>
+    <div id="thankPopup" class="thank-popup">
+      <div class="popup-content">
+        <i class="fa-solid fa-heart"></i>
+        <h3>Thank You!</h3>
+        <p>Your message has been received 💌</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Footer -->
+  <!-- 🌙 FOOTER -->
   <footer class="footer">
     <h3>✨ Thanks for watching ✨</h3>
     <div class="footer-icons">
@@ -162,7 +139,6 @@
     </div>
   </footer>
 
-  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
