@@ -12,7 +12,7 @@
   <!-- AOS (scroll animation) -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
 
-  <!-- Custom CSS -->
+  <!-- CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -61,12 +61,52 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="about" data-aos="fade-up">
-    <h2>About Me</h2>
-    <p>I'm a passionate UI/UX designer dedicated to creating seamless and visually engaging digital experiences. 
-      With 2 years of experience, I specialize in designing intuitive interfaces that enhance usability and user satisfaction.</p>
-    <div class="skills">
-      <span>Figma</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span>
+  <section id="about" class="about-section">
+    <div class="about-container" data-aos="fade-up">
+      <!-- Avatar -->
+      <div class="about-avatar">
+        <div class="avatar-bg">
+          <img src="images/avatar.png" alt="Sara Avatar">
+        </div>
+        <div class="floating-shapes">
+          <span class="shape"></span>
+          <span class="shape"></span>
+          <span class="shape"></span>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content glass">
+        <h2>About Me</h2>
+        <p>
+          Welcome to my portfolio! I'm <strong>Sara Howari</strong>, a passionate UI/UX designer
+          dedicated to creating seamless and visually engaging digital experiences.
+          With over 2 years of experience, I specialize in designing intuitive interfaces
+          that enhance usability and user satisfaction.
+        </p>
+        <p>
+          My skills include <strong>wireframing, prototyping, and user research</strong>,
+          ensuring that each design is both aesthetically pleasing and functionally efficient.
+          I’ve worked on diverse projects including mobile apps, dashboards, and web platforms.
+        </p>
+        <p>
+          I’m deeply committed to blending creativity with precision to deliver
+          user-centered designs that stand out.
+        </p>
+
+        <h3>Skills</h3>
+        <div class="skills">
+          <span class="skill-icon figma"><i class="fa-brands fa-figma"></i> Figma</span>
+          <span class="skill-icon xd"><i class="fa-solid fa-x"></i> XD</span>
+          <span class="skill-icon ps"><i class="fa-solid fa-palette"></i> Photoshop</span>
+          <span class="skill-icon ai"><i class="fa-solid fa-bezier-curve"></i> Illustrator</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll Down Arrow -->
+    <div class="scroll-down">
+      <a href="#services"><i class="fa-solid fa-chevron-down"></i></a>
     </div>
   </section>
 
@@ -122,6 +162,7 @@
     </div>
   </footer>
 
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
