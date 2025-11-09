@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sara Howari | UI/UX Designer</title>
 
+  <!-- Fonts & Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- AOS (scroll animation) -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <canvas id="bgCanvas"></canvas>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">🪄 Sara</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#testimonials">Reviews</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-right">
+      <p class="tag">✨ WELCOME TO MY WORLD ✨</p>
+      <h1>Hi, <span id="typing"></span></h1>
+      <h2><span>UI & UX</span> Designer</h2>
+      <p class="desc">I create intuitive and visually appealing digital experiences that meet users’ expectations.</p>
+
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">My Projects</a>
+        <a href="#" class="btn secondary">Download CV</a>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-x-twitter"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
+    </div>
+
+    <div class="hero-avatar" data-aos="fade-left">
+      <img src="images/avatar.png" alt="Sara Avatar">
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about" data-aos="fade-up">
+    <h2>About Me</h2>
+    <p>I'm a passionate UI/UX designer dedicated to creating seamless and visually engaging digital experiences. 
+      With 2 years of experience, I specialize in designing intuitive interfaces that enhance usability and user satisfaction.</p>
+    <div class="skills">
+      <span>Figma</span><span>Adobe XD</span><span>Photoshop</span><span>Illustrator</span>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="service-cards">
+      <div class="card glow"><i class="fas fa-paint-brush"></i><h3>UI/UX Design</h3><p>Crafting intuitive designs that enhance user experience.</p></div>
+      <div class="card glow"><i class="fas fa-code"></i><h3>Web Design</h3><p>Designing responsive and engaging websites tailored to users.</p></div>
+      <div class="card glow"><i class="fas fa-mobile-alt"></i><h3>App Design</h3><p>Creating seamless and user-friendly mobile app interfaces.</p></div>
+      <div class="card glow"><i class="fas fa-vector-square"></i><h3>Prototyping</h3><p>Building structured wireframes for better design flow.</p></div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="projects" data-aos="fade-up">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-card glass"><h3>Amaksora App</h3><p>Visually appealing mobile app UI/UX design.</p></div>
+      <div class="project-card highlight glass"><h3>Homy App</h3><p>Seamless and intuitive app interface.</p></div>
+      <div class="project-card glass"><h3>B-Roll Media</h3><p>Modern web interface with user-focused flow.</p></div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials" data-aos="fade-up">
+    <h2>Testimonials</h2>
+    <div class="testimonial-card glass">
+      <p>“Sara did an amazing job designing a user-friendly and intuitive experience for our project. Her attention to detail and creativity made a huge difference!”</p>
+      <h4>— Huda Samer, CEO</h4>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact" data-aos="fade-up">
+    <h2>Let's Create Something Amazing Together ✨</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Write your message..." required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <h3>✨ Thanks for watching ✨</h3>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-x-twitter"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
