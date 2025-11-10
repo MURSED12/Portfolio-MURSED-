@@ -100,7 +100,7 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  padding: calc(70px + 6rem) 5% 5rem; /* Fix overlap */
+  padding: calc(70px + 10rem) 5% 5rem; /* Fix overlap */
   flex-wrap: wrap;
 }
 .hero-content {
