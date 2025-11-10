@@ -27,17 +27,21 @@ AOS.init({ duration: 1200, once: true });
 // Particle Background
 const canvas = document.getElementById("bgCanvas");
 const ctx = canvas.getContext("2d");
-canvas.width = innerWidth; 
+canvas.width = innerWidth;
 canvas.height = innerHeight;
 let particles = [];
 
 class Particle {
   constructor(x, y, size, speedX, speedY){
-    this.x = x; this.y = y; this.size = size;
-    this.speedX = speedX; this.speedY = speedY;
+    this.x = x;
+    this.y = y;
+    this.size = size;
+    this.speedX = speedX;
+    this.speedY = speedY;
   }
   update(){
-    this.x += this.speedX; this.y += this.speedY;
+    this.x += this.speedX;
+    this.y += this.speedY;
     if(this.x < 0 || this.x > canvas.width) this.speedX *= -1;
     if(this.y < 0 || this.y > canvas.height) this.speedY *= -1;
   }
