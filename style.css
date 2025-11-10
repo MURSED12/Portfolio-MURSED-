@@ -26,20 +26,22 @@ body {
 /* ===== NAVBAR ===== */
 .navbar {
   position: fixed;
+  top: 0;
   width: 100%;
-  background: rgba(25, 0, 45, 0.7);
+  background: rgba(25, 0, 45, 0.75);
   backdrop-filter: blur(12px);
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 3rem;
   z-index: 1000;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.2);
 }
 
 /* ===== BRAND LOGO ===== */
 .brand-logo {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -47,8 +49,8 @@ body {
   background: linear-gradient(90deg, #ff5fd9, #b026ff, #00d4ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  cursor: default;
   animation: shine 3s infinite linear;
+  cursor: default;
 }
 
 .brand-logo span {
@@ -98,7 +100,7 @@ body {
   align-items: center;
   justify-content: space-between;
   min-height: 100vh;
-  padding: 10rem 5% 5rem;
+  padding: calc(70px + 6rem) 5% 5rem; /* Fix overlap */
   flex-wrap: wrap;
 }
 .hero-content {
@@ -353,7 +355,6 @@ body {
   .navbar {
     flex-direction: column;
     padding: 1rem;
-    background: rgba(25, 0, 45, 0.8);
     text-align: center;
   }
 
@@ -372,17 +373,12 @@ body {
     font-size: 0.9rem;
     padding: 6px 12px;
     border-radius: 6px;
-    background: rgba(255, 255, 255, 0.05);
   }
 
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 8rem 1rem 4rem;
-  }
-
-  .hero-content {
-    max-width: 100%;
+    padding: calc(70px + 5rem) 1rem 4rem;
   }
 
   .hero-avatar img {
@@ -407,11 +403,7 @@ body {
     height: 180px;
   }
 
-  .about-content {
-    padding: 1.5rem;
-  }
-
-  .services {
+  .services, .projects, .contact {
     padding: 4rem 1rem;
   }
 
@@ -419,68 +411,11 @@ body {
     grid-template-columns: 1fr;
   }
 
-  .projects {
-    padding: 4rem 1rem;
-  }
-
   .project-card {
     min-width: 100%;
-  }
-
-  .contact form {
-    flex-direction: column;
-  }
-
-  .contact input,
-  .contact textarea {
-    width: 90%;
-    max-width: 350px;
   }
 
   .footer-icons a {
     font-size: 22px;
   }
 }
-
-@media (min-width: 769px) {
-  .navbar {
-    background: rgba(25, 0, 45, 0.85);
-    padding: 1rem 3rem;
-    height: 70px;
-    justify-content: space-between;
-    box-shadow: 0 2px 15px rgba(255, 95, 217, 0.15);
-  }
-
-  .hero {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .hero-avatar img {
-    width: 340px;
-  }
-
-  .about-container {
-    flex-direction: row;
-    text-align: left;
-  }
-
-  .avatar-bg {
-    width: 300px;
-    height: 300px;
-  }
-
-  .contact form {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-
-  .contact input {
-    width: 220px;
-  }
-
-  .contact textarea {
-    width: 300px;
-  }
-  }
