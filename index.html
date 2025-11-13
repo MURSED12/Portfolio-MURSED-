@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mursed Alam | Web Designer & Data Entry Expert</title>
 
-  <!-- Fonts & Icons -->
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- AOS -->
@@ -20,6 +22,7 @@
   <!-- Cursor Glow -->
   <div class="cursor-glow"></div>
 
+  <!-- Background Canvas -->
   <canvas id="bgCanvas"></canvas>
 
   <!-- Navbar -->
@@ -38,13 +41,15 @@
     </nav>
   </header>
 
-  <!-- Hero -->
+  <!-- HERO -->
   <section id="home" class="hero">
     <div class="hero-content" data-aos="fade-right">
       <p class="tag">✨ WELCOME TO MY PORTFOLIO ✨</p>
-      <h1>Hi, I'm <span>Mursed Alam</span></h1>
+
+      <h1>Hi, I'm <span id="typing"></span></h1>
+
       <h2><span>Web Designer</span> & <span>Data Entry Expert</span></h2>
-      <p class="desc">I design clean and responsive websites and handle professional data entry, Excel & PowerPoint projects efficiently.</p>
+      <p class="desc">I design clean and responsive websites and handle Excel & PowerPoint projects professionally.</p>
 
       <div class="hero-buttons">
         <a href="#projects" class="btn primary">My Work</a>
@@ -63,55 +68,54 @@
     </div>
   </section>
 
-  <!-- About -->
+  <!-- ABOUT -->
   <section id="about" class="about-section">
     <div class="about-container" data-aos="fade-up">
       <div class="avatar-bg">
         <img src="image2.png" alt="MA logo">
       </div>
 
-      <div class="about-content glass">
+      <div class="about-content">
         <h2>About Me</h2>
-        <p>I'm <strong>Mursed Alam</strong>, a passionate <strong>Web Designer</strong> with expertise in <strong>HTML, CSS, and Frontend UI</strong>.</p>
-        <p>Along with designing websites, I’m also skilled in <strong>Data Entry, MS Excel, PowerPoint, and MS Access</strong>.</p>
+        <p>I'm <strong>Mursed Alam</strong>, a passionate <strong>Web Designer</strong> skilled in HTML, CSS, JavaScript, and UI design.</p>
+        <p>I also work professionally in <strong>Data Entry, MS Excel, PowerPoint, and MS Access</strong>.</p>
 
         <h3>Skills</h3>
         <div class="skills">
           <span class="skill-icon"><i class="fa-brands fa-html5"></i> HTML</span>
           <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i> CSS</span>
           <span class="skill-icon"><i class="fa-brands fa-js"></i> JavaScript</span>
-          <span class="skill-icon"><i class="fa-solid fa-database"></i> Data Entry</span>
           <span class="skill-icon"><i class="fa-solid fa-file-excel"></i> Excel</span>
           <span class="skill-icon"><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span>
-          <span class="skill-icon"><i class="fa-solid fa-database"></i> MS Access</span>
+          <span class="skill-icon"><i class="fa-solid fa-database"></i> Access</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Services -->
+  <!-- SERVICES -->
   <section id="services" class="services" data-aos="fade-up">
     <h2>Services</h2>
     <div class="service-cards">
-      <div class="card"><i class="fas fa-code"></i><h3>Web Design</h3><p>Modern and responsive website layouts using HTML, CSS, and JavaScript.</p></div>
-      <div class="card"><i class="fas fa-pen-nib"></i><h3>UI/UX Design</h3><p>Creating user-friendly and visually balanced interfaces.</p></div>
-      <div class="card"><i class="fas fa-file-excel"></i><h3>Data Entry</h3><p>Accurate and fast data entry services with Excel management.</p></div>
-      <div class="card"><i class="fas fa-chart-pie"></i><h3>PowerPoint & Reports</h3><p>Clean, professional presentation and report formatting.</p></div>
+      <div class="card"><i class="fas fa-code"></i><h3>Web Design</h3><p>Responsive and modern UI designs.</p></div>
+      <div class="card"><i class="fas fa-pen-nib"></i><h3>UI/UX</h3><p>Clean, user-centered design layouts.</p></div>
+      <div class="card"><i class="fas fa-file-excel"></i><h3>Excel</h3><p>Dashboard, reports, data entry.</p></div>
+      <div class="card"><i class="fas fa-chart-pie"></i><h3>PowerPoint</h3><p>Professional presentations.</p></div>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects" class="projects" data-aos="fade-up">
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
     <h2>My Projects</h2>
     <div class="project-list">
-      <div class="project-card"><h3>Personal Portfolio</h3><p>Responsive website built with HTML, CSS & JS.</p></div>
-      <div class="project-card highlight"><h3>Excel Dashboard</h3><p>Automated data reports and charts for business analytics.</p></div>
-      <div class="project-card"><h3>College Database</h3><p>MS Access project for managing student records efficiently.</p></div>
+      <div class="project-card"><h3>Portfolio</h3><p>Responsive personal website.</p></div>
+      <div class="project-card"><h3>Excel Dashboard</h3><p>Automated charts & KPIs.</p></div>
+      <div class="project-card"><h3>Database System</h3><p>Access project for college.</p></div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact" data-aos="fade-up">
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
     <h2>Let's Work Together 🤝</h2>
     <form>
       <input type="text" placeholder="Your Name" required>
@@ -121,7 +125,7 @@
     </form>
   </section>
 
-  <!-- Footer -->
+  <!-- FOOTER -->
   <footer class="footer">
     <h3>✨ Thank You for Visiting ✨</h3>
     <div class="footer-icons">
@@ -132,7 +136,8 @@
     </div>
   </footer>
 
-
-  
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
