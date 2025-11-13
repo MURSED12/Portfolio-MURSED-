@@ -396,7 +396,7 @@ body {
   transform: scale(1.2);
 }
 
-/* ===== RESPONSIVE (FINAL FIX) ===== */
+/* ===== RESPONSIVE - FINAL FIX ===== */
 @media (max-width: 768px) {
 
   .navbar {
