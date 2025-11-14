@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>design Verse by MURSED</title>
+  <title>Mursed Alam | Web Designer & Data Entry Expert</title>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,138 +19,125 @@
 </head>
 <body>
 
-<div class="cursor-glow"></div>
+  <!-- Cursor Glow -->
+  <div class="cursor-glow"></div>
 
-<!-- NAVBAR -->
-<header class="navbar">
-  <div class="brand-logo">✦ design Verse by MURSED</div>
+  <!-- Background Canvas -->
+  <canvas id="bgCanvas"></canvas>
 
-  <nav>
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-</header>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="brand-logo">
+      <span class="icon">⚡</span> DesignVerse <span>by Mursed</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<!-- HERO -->
-<section id="home" class="hero">
-  <div class="hero-content">
-    <p class="tag">✨ WELCOME TO MY PORTFOLIO ✨</p>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content" data-aos="fade-right">
+      <p class="tag">✨ WELCOME TO MY PORTFOLIO ✨</p>
 
-    <h1>Hi, I'm <span>MURSED ALAM</span></h1>
-    <h2><span>Web Designer</span> & <span>Data Entry Expert</span></h2>
+      <h1>Hi, I'm <span id="typing"></span></h1>
 
-    <p class="desc">I design clean and responsive websites and handle Excel & PowerPoint projects professionally.</p>
+      <h2><span>Web Designer</span> & <span>Data Entry Expert</span></h2>
+      <p class="desc">I design clean and responsive websites and handle Excel & PowerPoint projects professionally.</p>
 
-    <div class="hero-buttons">
-      <a href="#projects" class="btn primary">My Work</a>
-      <a href="#" class="btn secondary">Download CV</a>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn primary">My Work</a>
+        <a href="#" class="btn secondary">Download CV</a>
+      </div>
+
+      <div class="socials">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-github"></i></a>
+        <a href="#"><i class="fab fa-facebook"></i></a>
+      </div>
     </div>
 
-    <div class="socials">
-      <a><i class="fab fa-linkedin"></i></a>
-      <a><i class="fab fa-github"></i></a>
-      <a><i class="fab fa-facebook"></i></a>
+    <div class="hero-avatar" data-aos="fade-left">
+      <img src="image1.jpg" alt="Mursed Avatar">
     </div>
-  </div>
+  </section>
 
-  <div class="hero-avatar">
-    <img src="image1.jpg" alt="profile">
-  </div>
-</section>
+  <!-- ABOUT -->
+  <section id="about" class="about-section">
+    <div class="about-container" data-aos="fade-up">
+      <div class="avatar-bg">
+        <img src="image2.png" alt="MA logo">
+      </div>
 
-<!-- ABOUT -->
-<section id="about" class="about-section">
-  <div class="avatar-bg"><img src="image2.png"></div>
+      <div class="about-content">
+        <h2>About Me</h2>
+        <p>I'm <strong>Mursed Alam</strong>, a passionate <strong>Web Designer</strong> skilled in HTML, CSS, JavaScript, and UI design.</p>
+        <p>I also work professionally in <strong>Data Entry, MS Excel, PowerPoint, and MS Access</strong>.</p>
 
-  <div class="about-content">
-    <h2>About Me</h2>
-    <p>I'm <strong>Mursed Alam</strong>, a passionate Web Designer skilled in HTML, CSS, JavaScript and UI Design.</p>
-    <p>I also work professionally in Excel, PowerPoint, Access and Data Entry.</p>
-
-    <h3>Skills</h3>
-    <div class="skills">
-      <span class="skill-icon"><i class="fa-brands fa-html5"></i> HTML</span>
-      <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i> CSS</span>
-      <span class="skill-icon"><i class="fa-brands fa-js"></i> JS</span>
-      <span class="skill-icon"><i class="fa-solid fa-file-excel"></i> Excel</span>
-      <span class="skill-icon"><i class="fa-solid fa-file-powerpoint"></i> PPT</span>
+        <h3>Skills</h3>
+        <div class="skills">
+          <span class="skill-icon"><i class="fa-brands fa-html5"></i> HTML</span>
+          <span class="skill-icon"><i class="fa-brands fa-css3-alt"></i> CSS</span>
+          <span class="skill-icon"><i class="fa-brands fa-js"></i> JavaScript</span>
+          <span class="skill-icon"><i class="fa-solid fa-file-excel"></i> Excel</span>
+          <span class="skill-icon"><i class="fa-solid fa-file-powerpoint"></i> PowerPoint</span>
+          <span class="skill-icon"><i class="fa-solid fa-database"></i> Access</span>
+        </div>
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- SERVICES -->
-<section id="services" class="services">
-  <h2>Services</h2>
-  <div class="service-cards">
-    <div class="card"><i class="fas fa-code"></i><h3>Web Design</h3><p>Responsive & modern UI.</p></div>
-    <div class="card"><i class="fas fa-pen-nib"></i><h3>UI/UX</h3><p>User-centered clean layout.</p></div>
-    <div class="card"><i class="fas fa-file-excel"></i><h3>Excel</h3><p>Dashboard & automation.</p></div>
-    <div class="card"><i class="fas fa-chart-pie"></i><h3>PPT</h3><p>Professional slides.</p></div>
-  </div>
-</section>
-
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-  <h2>My Projects</h2>
-
-  <div class="project-list">
-    <div class="project-card">
-      <h3>Portfolio</h3>
-      <p>Full responsive personal site.</p>
+  <!-- SERVICES -->
+  <section id="services" class="services" data-aos="fade-up">
+    <h2>Services</h2>
+    <div class="service-cards">
+      <div class="card"><i class="fas fa-code"></i><h3>Web Design</h3><p>Responsive and modern UI designs.</p></div>
+      <div class="card"><i class="fas fa-pen-nib"></i><h3>UI/UX</h3><p>Clean, user-centered design layouts.</p></div>
+      <div class="card"><i class="fas fa-file-excel"></i><h3>Excel</h3><p>Dashboard, reports, data entry.</p></div>
+      <div class="card"><i class="fas fa-chart-pie"></i><h3>PowerPoint</h3><p>Professional presentations.</p></div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>Excel Dashboard</h3>
-      <p>Automated charts & KPIs.</p>
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+    <div class="project-list">
+      <div class="project-card"><h3>Portfolio</h3><p>Responsive personal website.</p></div>
+      <div class="project-card"><h3>Excel Dashboard</h3><p>Automated charts & KPIs.</p></div>
+      <div class="project-card"><h3>Database System</h3><p>Access project for college.</p></div>
     </div>
+  </section>
 
-    <div class="project-card">
-      <h3>Database System</h3>
-      <p>MS Access college project.</p>
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Let's Work Together 🤝</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message..." required></textarea>
+      <button type="submit" class="btn primary">Send Message</button>
+    </form>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <h3>✨ Thank You for Visiting ✨</h3>
+    <div class="footer-icons">
+      <a href="#"><i class="fab fa-facebook"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+      <a href="#"><i class="fas fa-envelope"></i></a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <h2>Let's Work Together 🤝</h2>
-
-  <input type="text" placeholder="Your Name">
-  <input type="email" placeholder="Your Email">
-  <textarea placeholder="Your Message"></textarea>
-  <button class="btn primary">Send Message</button>
-</section>
-
-<!-- FOOTER -->
-<footer class="footer">
-  <h3>✨ Thank You for Visiting ✨</h3>
-  <div class="footer-icons">
-    <i class="fab fa-facebook"></i>
-    <i class="fab fa-linkedin"></i>
-    <i class="fab fa-github"></i>
-    <i class="fas fa-envelope"></i>
-  </div>
-</footer>
-
-<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-<script>
-AOS.init({ once: true, duration: 900 });
-</script>
-
-<script>
-document.addEventListener("mousemove", e => {
-  const glow = document.querySelector(".cursor-glow");
-  if(glow){
-    glow.style.left = e.clientX + "px";
-    glow.style.top = e.clientY + "px";
-  }
-});
-</script>
-
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
